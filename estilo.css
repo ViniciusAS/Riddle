@@ -1,0 +1,172 @@
+
+html{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #fcfcfc;
+    text-align: center;
+    font-family: Arial;
+    z-index: 1;
+}
+#content{
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    width: 980px;
+    border: #d3d3d3 dotted 2px;
+    border-bottom: none;
+    border-top: none;
+}   
+    #content h1{
+        color: #3a3a3a;
+        padding: 10px;
+        margin-top: 0;
+        padding-top: 40px;
+    }
+    #content p{
+        padding-left: 30px;
+    }
+    #content button{
+        float: left;
+        width: 470px;
+        padding: 8px;
+        width: 435px;
+        margin: 15px;
+    }
+    button, input[type="submit"], input[type="reset"]{
+        background: #99ff99;
+        border: #66ff66 solid 2px;
+        color: #1a6c00;
+        cursor: pointer;
+    }
+        button:hover, input[type="submit"]:hover{
+            background: #76f476;
+        }
+        input[type="reset"]{
+            background: #ff8989;
+            border: #ff6464 solid 2px;
+            color: #a70000;
+        }
+            input[type="reset"]:hover{
+                background: #ff6464;
+            }
+    #content div#login{
+        float: left;
+        width: 470px;
+        padding: 10px;
+        margin: 10px;
+    }
+    #content div div input{
+        width: 470px;
+    }
+    #content input[type="text"], #content input[type="password"]{
+        border: #333333 solid 1px;
+        border-radius: 2px;
+        font-family: Arial;
+        font-size: 14px;
+        height: 16px;
+        padding: 2px;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 458px;
+    }
+    #content div#login input[type="submit"]{
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: 0;
+        float: right;
+    }
+
+#fundoEscuro{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+    opacity: 0.4;
+    display: block;
+    z-index: 2;
+    display: none;
+}
+#modal{
+    position: absolute;
+    display: block;
+    background: white;
+    width: 800px;
+    top: 50px;
+    left: 50%;
+    margin-left: -421px;
+    padding: 20px;
+    z-index: 3;
+    display: none;
+    border: #dddddd solid 1px;
+    border-radius: 2px;
+    text-align: left;
+}
+#msgErro{
+    position: fixed;
+    display: block;
+    background: #fc8383;
+    width: 400px;
+    top: 0;
+    left: 50%;
+    margin-left: -221px;
+    padding: 20px;
+    z-index: 6;
+    display: block;
+    border: #8b0202 solid 1px;
+    box-shadow: #250000 0px 0px 6px;
+    border-radius: 0 0 3px 3px;
+    border-top: none;
+    color: #8b0202;
+    font-size: 14px;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+    #modal form{
+        width: 550px;
+        text-align: left;
+        margin: 0 auto;
+    }
+    #modal form table tr td{
+        padding-top: 5px;
+    }
+    form input[type="text"], form input[type="password"], form select{
+        border: #333333 solid 1px;
+        border-radius: 2px;
+        font-family: Arial;
+        font-size: 14px;
+        height: 16px;
+        padding: 2px;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 400px;
+    }
+    form input[type="submit"], form input[type="reset"]{
+        float: right;
+        padding: 20px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    form input[type="submit"][disabled="disabled"], form input[type="reset"][disabled="disabled"]{
+        background: #cccccc;
+        color: #6c6c6c;
+        border-color: #9b9b9b;
+        cursor: not-allowed;
+    }
+    form select{
+        width: 412px;
+        height: 24px;
+    }
+    form img{
+        margin: 5px;
+        display: none;
+    }
